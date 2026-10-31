@@ -128,3 +128,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Maintained browser application
+!site/
+!site/**
+!reports/
+!reports/**
+!project.json
+!data/Concrete_Data.xls
+!data/insurance-source.csv
+!data/yelp_labelled.txt
+node_modules/
+.pylint-cache/
+.venv/

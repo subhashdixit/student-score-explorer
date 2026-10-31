@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "source_sha256": "802478d1fb131fea8481d61c88e74d2333d3e5580ff1c13483dda971eed8f880",
+  "source_path": "notebook/data/stud.csv",
+  "source_notice": "Original repository dataset; upstream annotation/collection provenance is not independently established.",
+  "original_rows": 1000,
+  "valid_target_rows": 1000,
+  "out_of_range_values_imputed": {},
+  "selected_model": "linear",
+  "kind": "regression",
+  "threshold": 0.5,
+  "split": {
+    "train": 589,
+    "validation": 211,
+    "test": 200
+  },
+  "split_method": "GroupShuffleSplit; identical selected profiles share a group",
+  "validation_candidates": {
+    "linear": {
+      "rows": 211,
+      "mae": 6.865567347103545,
+      "rmse": 8.397902506056305,
+      "r2": 0.7005823953879307
+    },
+    "random_forest": {
+      "rows": 211,
+      "mae": 7.179156990226418,
+      "rmse": 8.806529662342669,
+      "r2": 0.6707352196059565
+    }
+  },
+  "test": {
+    "rows": 200,
+    "mae": 7.047613892807972,
+    "rmse": 8.515169942051694,
+    "r2": 0.7305926747358291
+  },
+  "test_baseline": {
+    "rows": 200,
+    "mae": 13.03550933786078,
+    "rmse": 16.408065885741795,
+    "r2": -0.00031675450997714627
+  },
+  "training_only_preprocessing": true,
+  "sklearn_version": "1.6.1",
+  "artifact_sha256": "08df5e571113cd98b801aa789943c123f6487ed4babfc89de5c4bc67d694a63c"
+}

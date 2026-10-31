@@ -1,0 +1,13 @@
+{
+  "old": "Student_Exam_Performence_End_to_End_Project",
+  "name": "student-score-explorer",
+  "title": "Student Score Explorer",
+  "kind": "regression",
+  "target": "math_score",
+  "unit": "score points",
+  "color": "#6751ab",
+  "intro": "Understand how a recorded mathematics score relates to reading, writing and assessment context.",
+  "limitations": "Reading and writing are scores from the same source assessment. This is not a prediction made before those tests, an intelligence measure or a student-selection tool. Gender and ethnicity are excluded.",
+  "positiveLabel": "1",
+  "negativeLabel": "0"
+}
