@@ -1,5 +1,8 @@
 # Student Score Explorer
 
+**Reproducible versions:** [Dependency versions and exact setup](DEPENDENCIES.md).
+
+
 **Application:** [Open Student Score Explorer](https://subhashdixit.github.io/student-score-explorer/) · [Source](https://github.com/subhashdixit/student-score-explorer)
 
 Understand how a recorded mathematics score relates to reading, writing and assessment context. A complete **HTML/CSS/JavaScript application hosted on GitHub Pages**, with real offline Python training and a verified numeric model export. Inference runs in the visitor's browser, including CSV batches; there is no paid prediction API or model server.
@@ -114,7 +117,7 @@ Open `http://127.0.0.1:8000`. Serve over HTTP rather than opening `index.html` w
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements-training.txt
+python -m python -m pip install --require-hashes --only-binary=:all: -r requirements-training.lock.txt
 python scripts/train.py
 python scripts/check_release.py
 python -m black --check scripts
