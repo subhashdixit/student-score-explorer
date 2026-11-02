@@ -1,0 +1,14 @@
+# Historical prototype dependencies: preserved for reference.
+# Supported maintained-release installation and exact locks: DEPENDENCIES.md.
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+catboost
+xgboost
+dill
+flask
+# pickle
+# This will automaticall trigger setup.py file
+# -e .
